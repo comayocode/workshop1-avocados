@@ -1,3 +1,107 @@
 @import 'tailwindcss/dist/base.css';
 @import 'tailwindcss/dist/components.css';
 @import 'tailwindcss/dist/utilities.css';
+
+/* ------------------ */
+/* --- ENCABEZADO --- */
+/* ------------------ */
+header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 5px rgba(38, 38, 38, .2);
+  background-color: #fff;
+  z-index: 999;
+}
+
+.logo {
+  width: 50px;
+}
+
+.nombre-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* -------------------------- */
+/* --- CARDS DE PRODUCTOS --- */
+/* -------------------------- */
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+  position: relative;
+}
+
+.container-data {
+  margin-top: 40px;
+  width: 275px;
+  height: 450px;
+  border: 1px solid rgba(182, 182, 182, 0.12);
+  overflow: hidden; /* Evitar que el contenido se desborde */
+}
+
+.container-data:hover {
+  background-color: rgba(211, 211, 211, 0.12);
+  cursor: pointer;
+}
+
+/* Expandir img al pasar mouse */
+.container-data:hover .product-img {
+  transform:scale(1.03);
+}
+
+.container-info {
+  padding-left: 8px;
+}
+
+.product {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.product-desc {
+  /* Límite de líneas en el contenedor */
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+
+  width: 275px;
+  margin-top: 10px;
+  padding-right: 8px;
+}
+
+.product-price {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #67855e;
+}
+
+/* -------------- */
+/* --- FOOTER --- */
+/* -------------- */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: #2D2727;
+  color: #fff;
+}
+
+.link-linkedin {
+  color: #94AF9F;
+}
+
+.link-linkedin:hover {
+  color: #7AA874;
+}
