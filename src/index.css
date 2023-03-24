@@ -2,6 +2,12 @@
 @import 'tailwindcss/dist/components.css';
 @import 'tailwindcss/dist/utilities.css';
 
+/* Footer permanezca abajo de la página */
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 /* ------------------ */
 /* --- ENCABEZADO --- */
 /* ------------------ */
@@ -24,6 +30,10 @@ header {
 .nombre-logo {
   font-size: 20px;
   font-weight: bold;
+}
+
+.full-container {
+  height: 100%;
 }
 
 /* -------------------------- */
@@ -96,6 +106,10 @@ footer {
   height: 70px;
   background-color: #2D2727;
   color: #fff;
+  /* Footer permanezca abajo de la página */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .link-linkedin {
