@@ -110,6 +110,11 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  text-align: center;
+}
+
+footer>p {
+  padding: 0 20px;
 }
 
 .link-linkedin {
